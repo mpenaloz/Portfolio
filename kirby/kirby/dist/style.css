@@ -1,0 +1,132 @@
+.wrapper{
+  margin:auto;
+}
+
+.body{
+  background-color:purple;
+}
+
+.head{
+  position:relative;
+  margin:auto;
+  width:200px;
+  height:200px;
+  border-radius:50%;
+  border-radius:50%;
+  background-color:pink;
+  border:2px solid black;
+  z-index:2;
+}
+
+#eye-left{
+  position:relative;
+  margin:auto;
+  background-color:white;
+  border:2px solid black;
+  height:50px;
+  width:30px;
+  border-radius: 40% 40% 40% 40%;
+  top:55px;
+  right:5px;
+  
+  
+}
+
+#eye-right{
+  position:relative;
+  margin:auto;
+  background-color:white;
+  border:2px solid black;
+  height:50px;
+  width:30px;
+  border-radius: 40% 40% 40% 40%;
+  top:0px;
+  right:-50px;
+}
+
+#left-pupil{
+  position:relative;
+  margin:auto;
+  background-color:indigo;
+  border:2px solid black;
+  height:28px;
+  width:20px;
+  border-radius:40% 40% 40% 40%;
+  top:20px;
+  right:0px;
+}
+
+#right-pupil{
+  position:relative;
+  margin:auto;
+  background-color:indigo;
+  border:2px solid black;
+  height:28px;
+  width:20px;
+  border-radius:40% 40% 40% 40%;
+  top:19px;
+  right:0px;
+}
+
+.mouth{
+  position:relative;
+  background-color:red;
+  border:2px solid black;
+  height:75px;
+  width:60px;
+  border-radius:50% 100% 70% 100%;
+  right:-100px;
+  bottom:0px;
+}
+.left-foot{
+  position:relative;
+  background-color:red;
+  border:2px solid black;
+  height:75px;
+  width:60px;
+  border-radius:50% 100% 70% 100%;
+  border-top:30px solid transparent;
+  right:-000px;
+  bottom:45px;
+  z-index:1;
+  transform:rotate(24deg);
+}
+
+#leftArm{
+  position:relative;
+  margin:auto;
+  width:50px;
+  height:50px;
+  border-radius:50%;
+  background-color:pink;
+  border:2px solid black;
+  z-index:2;
+  bottom:300px;
+  left:-80px;
+}
+#rightArm{
+  position:relative;
+  margin:auto;
+  width:50px;
+  height:50px;
+  border-radius:50%;
+  background-color:pink;
+  border:2px solid black;
+  z-index:2;
+  bottom:350px;
+  left:80px;
+}
+
+#right-foot{
+  position:relative;
+  background-color:red;
+  border:2px solid black;
+  height:20px;
+  width:50px;
+  border-radius:0 0  50% 100%;
+  border-top:30px solid transparent;
+  right:-130px;
+  bottom:214px;
+  z-index:1;
+  transform:rotate(-24deg);
+}

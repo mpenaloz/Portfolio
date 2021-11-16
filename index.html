@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>Miguel Penaloza - Software Developer</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500&family=Quicksand:wght@500&display=swap" rel="stylesheet">  
+    <style>
+        /* reset */
+              #fs-frm input,
+              #fs-frm select,
+              #fs-frm textarea,
+              #fs-frm fieldset,
+              #fs-frm optgroup,
+              #fs-frm label,
+              #fs-frm #card-element:disabled {
+                font-family: inherit;
+                font-size: 100%;
+                color: inherit;
+                border: none;
+                border-radius: 0;
+                display: block;
+                width: 100%;
+                padding: 0;
+                margin: 0;
+                -webkit-appearance: none;
+                -moz-appearance: none;
+              }
+              #fs-frm label,
+              #fs-frm legend,
+              #fs-frm ::placeholder {
+                font-size: .825rem;
+                margin-bottom: .5rem;
+                padding-top: .2rem;
+                display: flex;
+                align-items: baseline;
+              }
+              
+              /* border, padding, margin, width */
+              #fs-frm input,
+              #fs-frm select,
+              #fs-frm textarea,
+              #fs-frm #card-element {
+                border: 1px solid rgba(0,0,0,0.2);
+                background-color: rgba(255,255,255,0.9);
+                padding: .75em 1rem;
+                margin-bottom: 1.5rem;
+              }
+              #fs-frm input:focus,
+              #fs-frm select:focus,
+              #fs-frm textarea:focus {
+                background-color: white;
+                outline-style: solid;
+                outline-width: thin;
+                outline-color: gray;
+                outline-offset: -1px;
+              }
+              #fs-frm [type="text"],
+              #fs-frm [type="email"] {
+                width: 100%;
+              }
+              #fs-frm [type="button"],
+              #fs-frm [type="submit"],
+              #fs-frm [type="reset"] {
+                width: auto;
+                cursor: pointer;
+                -webkit-appearance: button;
+                -moz-appearance: button;
+                appearance: button;
+              }
+              #fs-frm [type="button"]:focus,
+              #fs-frm [type="submit"]:focus,
+              #fs-frm [type="reset"]:focus {
+                outline: none;
+              }
+              #fs-frm [type="submit"],
+              #fs-frm [type="reset"] {
+                margin-bottom: 0;
+              }
+              #fs-frm select {
+                text-transform: none;
+              }
+              
+              #fs-frm [type="checkbox"] {
+                -webkit-appearance: checkbox;
+                -moz-appearance: checkbox;
+                appearance: checkbox;
+                display: inline-block;
+                width: auto;
+                margin: 0 .5em 0 0 !important;
+              }
+              
+              #fs-frm [type="radio"] {
+                -webkit-appearance: radio;
+                -moz-appearance: radio;
+                appearance: radio;
+              }
+              
+              /* address, locale */
+              #fs-frm fieldset.locale input[name="city"],
+              #fs-frm fieldset.locale select[name="state"],
+              #fs-frm fieldset.locale input[name="postal-code"] {
+                display: inline;
+              }
+              #fs-frm fieldset.locale input[name="city"] {
+                width: 52%;
+              }
+              #fs-frm fieldset.locale select[name="state"],
+              #fs-frm fieldset.locale input[name="postal-code"] {
+                width: 20%;
+              }
+              #fs-frm fieldset.locale input[name="city"],
+              #fs-frm fieldset.locale select[name="state"] {
+                margin-right: 3%;
+              }
+              
+        a{
+            color:#225e51;
+        }
+
+        
+        .green{
+            color: #225e51
+        }
+
+        .greenBG{
+            background-color:#225e51;
+            color:white;
+        }
+        .title-font-head {
+            font-size: 50px;
+            margin-top: 50px;
+            text-transform: uppercase;
+            line-height: 40px;
+        }
+
+        .title-font {
+            font-size: 40px;
+            text-transform: uppercase;
+            line-height: 40px;
+        }
+
+        body{
+            font-family: 'Quicksand', sans-serif;
+        }
+
+        body{
+            font-size: 1rem;
+            line-height: 1.5;
+            text-align:left;
+            color: #225e51;
+            background-color: white;
+            margin:0;
+
+        }
+
+        .py-5 {
+            padding-top: 3rem !important;
+            padding-bottom: 3rem !important;
+        }
+
+        .container {
+            width: 100%;
+            max-width:800px;
+            padding-right: 15px;
+            padding-left: 15px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        .container2{
+            max-width: 1140px;
+        }
+        .navbar{
+            padding: .5rem 1rem;
+            font-weight: 500rem;
+            font-size: 25px;
+        } 
+
+        .jumbotron {
+            color: white;
+            background-image: url("Blob.svg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 70vh;
+            text-align: center;
+            padding: 6rem;
+        }
+
+        #about{
+            margin:100px 0;
+            padding-top:50px;
+
+        }
+
+        section{
+            display: block;
+        }
+        
+        .row{
+            display: flex;
+            flex-wrap: wrap;
+            margin-right:-15px;
+            margin-left:-15px;
+        }
+
+        .project-title {
+            font-size: 25px;
+            font-weight: 600;
+            text-align: center;
+        }
+
+        .portfolio-img-div {
+            text-align: center;
+        }
+        
+        .footer {
+            background:#225e51;
+            color: white;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            font-size: 12px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg fixed-top" style="background-color: white;">
+        <a class="navbar-brand" href="#" style="font-size: 25px;">Miguel Penaloza</a>
+        <a href="https://github.com/mpenaloz" target="blank">
+            <img class="portfolio-img-div" src="github.png" height="50px" width="50px" style="margin-right: 10px;">
+        </a>
+        <a href="https://www.linkedin.com/in/miguel-penaloza-a549881bb/" target="blank">
+            <img class="portfolio-img-div" src="LinkedIn.png" height=50px; width=50px;>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="navbar-nav ms-auto">
+                <a class="nav-item nav-link green" href="#about">About</a>
+                <a class="nav-item nav-link green" href="#projects">Projects</a>
+                <a class="nav-item nav-link green" href="#contact">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4 title-font-head"style="margin-top: 120px">Miguel Penaloza</h1>
+            <h3 class="title-font">Software-Developer</h3>
+        </div>
+    </div>
+
+    <section id="about" class="py-5">
+        <div class="container" style="margin-top: 20px;">
+            <div class="row">
+                <p class="title-font">About Me</p>  
+            </div>
+        </div>
+
+        <div class="container portfolio-img-div">
+            <div class="row">
+               
+                <div><p style="float: right; padding-left: 25px;"><img src="Head Shot.JPG" height= 350px; width= 275px; border="3px" ></p>
+                <p>I am Miguel Penaloza, and I am a Software-Developer. When I was a senior in highschool I was given the opportunity to take a coding class that taught me basic Python and Java. 
+                    I loved every single second of that course. Fast forward to one year later, I decided that I would enroll into <a href="https://www.elevenfifty.org/" target="blank">Eleven Fifty Academy</a>'s software development bootcamp. Since then,
+                    I have gained skills in HTML5/CSS3, JAVASCRIPT, BOOTSTRAP 4, C#, and ASP.NET. As a current sophomore studying Cybersecurity at Purdue University, I hope 
+                    to apply both of my skillsets in software-development as well as cyber forensics to a future internship.
+                </p>
+                <p>
+                    <a href="RESUME S.D..pdf" download=""><b>Download my Resume</b></a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 greenBG"id="projects">
+        <div class="container" style="margin-top: 50px;margin-bottom: 30px;">
+            <p class="title-font">Projects</p>      
+        </div>
+
+        <div class="container" style="text-align: center;margin-bottom: 50px;">
+            <div class="row">
+                <div style="width:266px; margin-top: 5px;">
+                    <p class="project-title">CSS Character</p>
+                    <a class="project-cover" href="https://codepen.io/miguel0200/pen/NWpwNRj" target="_blank">
+                        <img id="Kirby" class="img-fluid" src="Kirby1.png" alt="Cover image of CSS Project (Kirby)" height=200px; width=200px;>
+                    </a>
+                    <p> 
+                        <span>
+                            A simple Kirby model designed using CSS and HTML
+                        </span>
+                    </p>
+                </div>
+                <div style="width:266px;margin-top: 5px;">
+                    <p class="project-title">Static Storefront</p>
+                    <a class="project-cover" href="https://mpenaloz.github.io/Static-Store-Front/" target="_blank">
+                        <img id="Storefront" class="img-fluid" src="Storefront234.png" alt="Cover image of HTML/CSS Project (Restaurant Website)" height=500px;>
+                    </a>
+                    <p> 
+                        <span>
+                            A simple Restaurant designed using HTML and CSS
+                        </span>
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="py-5 "id="contact">
+        <div class="container" style="margin-top: 40px;margin-bottom: 40px;">
+            <p class="title-font">Contact</p>
+        </div>
+        <!--<div class="container">
+            <div class="row">
+                <div style="width:266px;margin-bottom: 50px;">
+                    <a href="https://github.com/mpenaloz" target="blank">
+                        <img class="portfolio-img-div" src="github.png" height=200px; width=200px;>
+                    </a>
+                </div>
+                <div style="width:266px;">
+                    <a href="https://www.linkedin.com/in/miguel-penaloza-a549881bb/" target="blank">
+                        <img class="portfolio-img-div" src="LinkedIn.png" height=200px; width=200px;>
+                    </a>
+                </div>
+            </div>
+        </div>-->
+        <div class="container">
+            
+            <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/xwkagrol" method="post">
+                <fieldset id="fs-frm-inputs">
+                  <label for="full-name">Full Name</label>
+                  <input type="text" name="name" id="full-name" placeholder="First and Last" required="">
+                  <label for="email-address">Email Address</label>
+                  <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required="">
+                  <label for="message">Message</label>
+                  <textarea rows="5" name="message" id="message" placeholder="Message" required=""></textarea>
+                  <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+                </fieldset>
+                <input type="submit" value="Submit">
+              </form>
+              
+            
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer">
+            <div class="row">
+                <p>
+                    © 2021 Copyright: Miguel Penaloza
+                </p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
